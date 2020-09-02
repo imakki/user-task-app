@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useQuery } from "react-query";
+import EventCalender from "./EventCalender";
 const axios = require("axios");
 
 const UserProfile = () => {
@@ -51,6 +52,7 @@ const UserProfile = () => {
           </div>
         </div>
       )}
+      <EventCalender />
     </div>
   );
 };
