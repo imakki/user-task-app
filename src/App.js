@@ -5,10 +5,10 @@ import UserProfile from "./components/UserProfile.jsx";
 
 function App() {
   return (
-    <div className="bg-purple-300 p-4">
+    <div className="bg-purple-300 p-4 h-full">
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/user" component={UserProfile} />
+        <Route path="/:id" component={UserProfile} />
       </Switch>
     </div>
   );

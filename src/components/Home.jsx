@@ -7,6 +7,8 @@ const axios = require("axios");
 
 const Home = () => {
   const [pageNumber, setPageNumber] = useState(1);
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
   const queryInfo = useQuery(
     ["users", { pageNumber }],
     () =>
@@ -28,12 +30,16 @@ const Home = () => {
         <div className="mt-1 relative rounded-md shadow-sm mr-2">
           <input
             className="form-input p-4 block w-full sm:text-lg sm:leading-5"
+            value={firstName}
+            onChange={(e) => setFirstName(e.target.value)}
             placeholder="FirstName"
           />
         </div>
         <div class="mt-1 relative rounded-md shadow-sm">
           <input
             className="form-input p-4 block w-full sm:text-lg sm:leading-5"
+            value={lastName}
+            onChange={(e) => setLastName(e.target.value)}
             placeholder="LastName"
           />
         </div>
