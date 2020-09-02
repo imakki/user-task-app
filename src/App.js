@@ -5,7 +5,7 @@ import UserProfile from "./components/UserProfile.jsx";
 
 function App() {
   return (
-    <div className="bg-gray-400">
+    <div className="bg-purple-300 p-4">
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/user" component={UserProfile} />
