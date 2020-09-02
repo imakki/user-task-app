@@ -25,7 +25,7 @@ const UserProfile = () => {
         <div className="bg-white overflow-hidden shadow rounded-lg w-1/2 m-auto h-full">
           <div className="border-b flex items-center border-gray-200 px-4 py-5 sm:px-6">
             <img
-              class="inline-block h-12 w-12 rounded-full"
+              className="inline-block h-12 w-12 rounded-full"
               src={userData.data.data.avatar}
               alt=""
             />{" "}
